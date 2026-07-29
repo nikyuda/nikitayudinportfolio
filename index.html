@@ -2486,7 +2486,53 @@ P.S. Проект является вымышленным и не несет к�
             // Заполняем текст
             modalTitle.textContent = title;
             modalDesc.innerHTML = formattedDesc;
-            
+            // После того как заполнили modalTitle, modalDesc и т.д.
+
+// Назначаем обработчик звёздам в модалке
+const modalStars = document.querySelectorAll('#modalStars .star');
+const projectId = this.dataset.project; // берём ID проекта
+
+modalStars.forEach(star => {
+    star.onclick = function() {
+        const value = parseInt(this.dataset.value);
+        
+        // Загружаем текущие оценки
+        let ratings = JSON.parse(localStorage.getItem('projectRatings') || '{}');
+        if (!ratings[projectId]) {
+            ratings[projectId] = { total: 0, count: 0 };
+        }
+        
+        ratings[projectId].total += value;
+        ratings[projectId].count += 1;
+        localStorage.setItem('projectRatings', JSON.stringify(ratings));
+        
+        // Обновляем отображение в модалке
+        const avg = ratings[projectId].total / ratings[projectId].count;
+        document.getElementById('modalScore').textContent = avg.toFixed(1);
+        document.getElementById('modalCount').textContent = ratings[projectId].count;
+        
+        // Подсвечиваем звёзды
+        modalStars.forEach((s, index) => {
+            if (index < Math.round(avg)) {
+                s.classList.add('active');
+            } else {
+                s.classList.remove('active');
+            }
+        });
+        
+        // Блокируем на время
+        modalStars.forEach(s => {
+            s.style.pointerEvents = 'none';
+            s.style.opacity = '0.5';
+        });
+        setTimeout(() => {
+            modalStars.forEach(s => {
+                s.style.pointerEvents = 'auto';
+                s.style.opacity = '1';
+            });
+        }, 500);
+    };
+});
             // Теги
             let tagsHtml = '';
             tags.forEach(tag => {
@@ -2751,7 +2797,7 @@ P.S. Проект является вымышленным и не несет к�
             const container = document.querySelector(`.project-rating[data-project="${projectId}"]`);
             if (container) {
                 const stars = container.querySelectorAll('.star');
-                const avg = data.total / data.count || 0;
+                const avg = data.total / data.count;
                 const rounded = Math.round(avg);
                 stars.forEach((star, index) => {
                     if (index < rounded) {
