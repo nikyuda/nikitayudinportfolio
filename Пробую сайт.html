@@ -1,0 +1,2832 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Юдин Никита — Портфолио</title>
+    
+    <!-- ===== ШРИФТЫ ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts-online.ru/fonts/angry" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+   
+    <!-- ===== ФАВИКОН ===== -->
+    <link rel="icon" type="image/x-icon" href="https://4.downloader.disk.yandex.ru/preview/d9e96730c2cf54c771a08405585b266f257aaedc15fbe7b715df40ac7e28ba26/inf/24B-YZOFH9OkKUPmOOi-PypW3KUwZ0IHVnZ7NOwYwN55vuszycfpO0wAT4yD1TplC-XTai-k4sQv3IkJgvY16g%3D%3D?uid=501031867&filename=%2Csdmd.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=501031867&tknv=v3&is_direct_zip_experiment=1&size=1343x644">
+    <link rel="shortcut icon" type="image/x-icon" href="https://4.downloader.disk.yandex.ru/preview/d9e96730c2cf54c771a08405585b266f257aaedc15fbe7b715df40ac7e28ba26/inf/24B-YZOFH9OkKUPmOOi-PypW3KUwZ0IHVnZ7NOwYwN55vuszycfpO0wAT4yD1TplC-XTai-k4sQv3IkJgvY16g%3D%3D?uid=501031867&filename=%2Csdmd.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=501031867&tknv=v3&is_direct_zip_experiment=1&size=1343x644">
+    
+    <!-- Для современных браузеров (PNG) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://4.downloader.disk.yandex.ru/preview/d9e96730c2cf54c771a08405585b266f257aaedc15fbe7b715df40ac7e28ba26/inf/24B-YZOFH9OkKUPmOOi-PypW3KUwZ0IHVnZ7NOwYwN55vuszycfpO0wAT4yD1TplC-XTai-k4sQv3IkJgvY16g%3D%3D?uid=501031867&filename=%2Csdmd.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=501031867&tknv=v3&is_direct_zip_experiment=1&size=1343x644">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://4.downloader.disk.yandex.ru/preview/d9e96730c2cf54c771a08405585b266f257aaedc15fbe7b715df40ac7e28ba26/inf/24B-YZOFH9OkKUPmOOi-PypW3KUwZ0IHVnZ7NOwYwN55vuszycfpO0wAT4yD1TplC-XTai-k4sQv3IkJgvY16g%3D%3D?uid=501031867&filename=%2Csdmd.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=501031867&tknv=v3&is_direct_zip_experiment=1&size=1343x644">
+    
+    <!-- Для Apple устройств -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://4.downloader.disk.yandex.ru/preview/d9e96730c2cf54c771a08405585b266f257aaedc15fbe7b715df40ac7e28ba26/inf/24B-YZOFH9OkKUPmOOi-PypW3KUwZ0IHVnZ7NOwYwN55vuszycfpO0wAT4yD1TplC-XTai-k4sQv3IkJgvY16g%3D%3D?uid=501031867&filename=%2Csdmd.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=501031867&tknv=v3&is_direct_zip_experiment=1&size=1343x644">
+    <style>
+        /* ===== RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* ===== ФОН: СЕВЕРНОЕ СИЯНИЕ (переливающийся с задержкой) ===== */
+.aurora-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #0a0a0a;
+    overflow: hidden;
+}
+
+/* ===== СЛОИ СЕВЕРНОГО СИЯНИЯ ===== */
+.aurora-layer {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    animation: auroraFloat 12s ease-in-out infinite alternate;
+}
+
+/* Слой 1 - фиолетовый (двигается с задержкой 0s) */
+.aurora-layer:nth-child(1) {
+    width: 55%;
+    height: 55%;
+    top: -15%;
+    left: -15%;
+    background: radial-gradient(circle, #7b2fbe, #4a148c, transparent);
+    animation-delay: 0s;
+    opacity: 0.5;
+}
+
+/* Слой 2 - синий (двигается с задержкой 2s) */
+.aurora-layer:nth-child(2) {
+    width: 45%;
+    height: 45%;
+    bottom: -10%;
+    right: -10%;
+    background: radial-gradient(circle, #1a237e, #283593, transparent);
+    animation-delay: 2s;
+    opacity: 0.4;
+}
+
+/* Слой 3 - розовый (двигается с задержкой 4s) */
+.aurora-layer:nth-child(3) {
+    width: 40%;
+    height: 40%;
+    top: 30%;
+    left: 35%;
+    background: radial-gradient(circle, #e040fb, #7b1fa2, transparent);
+    animation-delay: 4s;
+    opacity: 0.35;
+}
+
+/* Слой 4 - голубой (двигается с задержкой 6s) */
+.aurora-layer:nth-child(4) {
+    width: 35%;
+    height: 35%;
+    top: 50%;
+    right: 20%;
+    background: radial-gradient(circle, #00bcd4, #006064, transparent);
+    animation-delay: 6s;
+    opacity: 0.3;
+}
+
+/* Слой 5 - зелёный (двигается с задержкой 8s) */
+.aurora-layer:nth-child(5) {
+    width: 30%;
+    height: 30%;
+    bottom: 20%;
+    left: 25%;
+    background: radial-gradient(circle, #00e676, #1b5e20, transparent);
+    animation-delay: 8s;
+    opacity: 0.25;
+}
+
+/* ===== АНИМАЦИЯ ДВИЖЕНИЯ ===== */
+@keyframes auroraFloat {
+    0% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+    }
+    25% {
+        transform: translate(60px, -40px) scale(1.1) rotate(5deg);
+    }
+    50% {
+        transform: translate(-30px, 60px) scale(0.9) rotate(-3deg);
+    }
+    75% {
+        transform: translate(40px, 30px) scale(1.05) rotate(8deg);
+    }
+    100% {
+        transform: translate(-50px, -50px) scale(0.95) rotate(-5deg);
+    }
+}
+
+/* ===== ЗВЁЗДЫ НА ФОНЕ ===== */
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.star-dot {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 3s ease-in-out infinite;
+}
+
+.star-dot:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; opacity: 0.3; }
+.star-dot:nth-child(2) { top: 25%; right: 15%; animation-delay: 0.5s; opacity: 0.5; }
+.star-dot:nth-child(3) { top: 60%; left: 10%; animation-delay: 1s; opacity: 0.4; }
+.star-dot:nth-child(4) { top: 80%; right: 25%; animation-delay: 1.5s; opacity: 0.6; }
+.star-dot:nth-child(5) { top: 15%; left: 70%; animation-delay: 2s; opacity: 0.3; }
+.star-dot:nth-child(6) { top: 45%; left: 85%; animation-delay: 2.5s; opacity: 0.5; }
+.star-dot:nth-child(7) { top: 70%; left: 50%; animation-delay: 0.7s; opacity: 0.4; }
+.star-dot:nth-child(8) { top: 35%; left: 30%; animation-delay: 1.2s; opacity: 0.6; }
+.star-dot:nth-child(9) { top: 90%; left: 75%; animation-delay: 1.8s; opacity: 0.3; }
+.star-dot:nth-child(10) { top: 5%; left: 45%; animation-delay: 2.2s; opacity: 0.5; }
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.5); }
+}
+
+        /* ===== ОБЩИЙ КОНТЕЙНЕР ===== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ===== ШАПКА ===== */
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(123, 47, 190, 0.2);
+            background: rgba(10, 10, 10, 0.7);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-family: 'Angry', 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: 0.3s;
+            position: relative;
+            padding-bottom: 4px;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: #7b2fbe;
+            transition: 0.3s;
+            transform: translateX(-50%);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        nav a:hover {
+            color: #b388ff;
+        }
+
+        /* ===== ГЛАВНЫЙ БАННЕР ===== */
+        .hero {
+            text-align: center;
+            padding: 60px 0 50px;
+        }
+
+        /* Фото в круге */
+        .hero-avatar {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 4px solid #7b2fbe;
+            box-shadow: 0 0 40px rgba(123, 47, 190, 0.3);
+            margin: 0 auto 24px;
+            margin-top: -30px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #1a0533;
+        }
+
+        .hero-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* ===== АНИМИРОВАННЫЕ ЛИНИИ ВОКРУГ ФОТО ===== */
+.hero-aurora-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+/* ===== ОБЁРТКА ДЛЯ ЛИНИЙ (чтобы не выходили за пределы) ===== */
+.hero-lines-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== КРУГОВЫЕ ЛИНИИ ===== */
+.hero-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: ringPulse 4s ease-in-out infinite;
+}
+
+/* Кольцо 1 - фиолетовое (чуть больше фото) */
+.hero-ring:nth-child(1) {
+    width: 108%;
+    height: 108%;
+    border-color: rgba(123, 47, 190, 0.3);
+    animation-delay: 0s;
+}
+
+/* Кольцо 2 - синее */
+.hero-ring:nth-child(2) {
+    width: 116%;
+    height: 116%;
+    border-color: rgba(179, 136, 255, 0.2);
+    animation-delay: 1s;
+    animation-duration: 5s;
+}
+
+/* Кольцо 3 - розовое */
+.hero-ring:nth-child(3) {
+    width: 124%;
+    height: 124%;
+    border-color: rgba(224, 64, 251, 0.15);
+    animation-delay: 2s;
+    animation-duration: 6s;
+}
+
+/* Кольцо 4 - голубое (пунктирное) */
+.hero-ring:nth-child(4) {
+    width: 132%;
+    height: 132%;
+    border: 1px dashed rgba(0, 188, 212, 0.15);
+    animation-delay: 3s;
+    animation-duration: 7s;
+}
+
+@keyframes ringPulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.03);
+        opacity: 0.15;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+    }
+}
+
+/* ===== ЛИНИИ СВЕЧЕНИЯ (лучи) ===== */
+.hero-rays {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-ray {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 45%;
+    background: linear-gradient(to top, transparent, rgba(123, 47, 190, 0.12), transparent);
+    transform-origin: center bottom;
+    animation: rayRotate 25s linear infinite;
+    border-radius: 50%;
+}
+
+.hero-ray:nth-child(1) { transform: translate(-50%, -100%) rotate(0deg); }
+.hero-ray:nth-child(2) { transform: translate(-50%, -100%) rotate(30deg); animation-delay: 1.5s; }
+.hero-ray:nth-child(3) { transform: translate(-50%, -100%) rotate(60deg); animation-delay: 3s; }
+.hero-ray:nth-child(4) { transform: translate(-50%, -100%) rotate(90deg); animation-delay: 4.5s; }
+.hero-ray:nth-child(5) { transform: translate(-50%, -100%) rotate(120deg); animation-delay: 6s; }
+.hero-ray:nth-child(6) { transform: translate(-50%, -100%) rotate(150deg); animation-delay: 7.5s; }
+.hero-ray:nth-child(7) { transform: translate(-50%, -100%) rotate(180deg); animation-delay: 9s; }
+.hero-ray:nth-child(8) { transform: translate(-50%, -100%) rotate(210deg); animation-delay: 10.5s; }
+.hero-ray:nth-child(9) { transform: translate(-50%, -100%) rotate(240deg); animation-delay: 12s; }
+.hero-ray:nth-child(10) { transform: translate(-50%, -100%) rotate(270deg); animation-delay: 13.5s; }
+.hero-ray:nth-child(11) { transform: translate(-50%, -100%) rotate(300deg); animation-delay: 15s; }
+.hero-ray:nth-child(12) { transform: translate(-50%, -100%) rotate(330deg); animation-delay: 16.5s; }
+
+@keyframes rayRotate {
+    0% {
+        opacity: 0.2;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.2;
+        transform: translate(-50%, -100%) rotate(calc(var(--rotation, 0deg) + 360deg));
+    }
+}
+
+/* Звёздочки */
+.aurora-sparkles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: visible;
+    z-index: 3;
+}
+
+.aurora-sparkles span {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #b388ff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #7b2fbe, 0 0 20px #4a148c;
+    animation: sparkle 3s ease-in-out infinite;
+}
+
+.aurora-sparkles span:nth-child(1) { top: 10%; left: 15%; animation-delay: 0s; }
+.aurora-sparkles span:nth-child(2) { top: 30%; right: 18%; animation-delay: 1s; }
+.aurora-sparkles span:nth-child(3) { bottom: 20%; left: 20%; animation-delay: 2s; }
+.aurora-sparkles span:nth-child(4) { top: 50%; right: 15%; animation-delay: 0.5s; }
+.aurora-sparkles span:nth-child(5) { top: 70%; left: 10%; animation-delay: 1.5s; }
+.aurora-sparkles span:nth-child(6) { bottom: 10%; right: 22%; animation-delay: 2.5s; }
+
+@keyframes sparkle {
+    0%, 100% { opacity: 0; transform: scale(0.5); }
+    50% { opacity: 1; transform: scale(1.5); }
+}
+
+/* Адаптив для телефона */
+@media (max-width: 600px) {
+    .hero-aurora-wrapper {
+        padding: 0 40px;
+    }
+    
+    .hero-aurora-wrapper::before,
+    .hero-aurora-wrapper::after {
+        width: 120px;
+        height: 200px;
+        filter: blur(40px);
+    }
+    
+    .hero-aurora-wrapper::before {
+        left: -30px;
+    }
+    
+    .hero-aurora-wrapper::after {
+        right: -30px;
+    }
+}
+
+        /* Заголовок */
+        .hero h1 {
+            font-family: 'Angry', 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            line-height: 1.2;
+            text-shadow: 0 0 40px rgba(123, 47, 190, 0.3);
+        }
+
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, #7b2fbe, #b388ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+            margin-top: 12px;
+            font-weight: 300;
+        }
+
+        /* ===== КАРТОЧКИ-РАЗДЕЛЫ ===== */
+        .section-title {
+            text-align: center;
+            font-family: 'Angry', 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin: 60px 0 16px;
+            background: linear-gradient(135deg, #ffffff, #b388ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-sub {
+            text-align: center;
+            color: #b0b0b0;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+            margin: 40px 0 60px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(123, 47, 190, 0.15);
+            border-radius: 16px;
+            padding: 32px 20px 28px;
+            text-align: center;
+            transition: 0.4s ease;
+            cursor: default;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #7b2fbe;
+            box-shadow: 0 8px 40px rgba(123, 47, 190, 0.15);
+            background: rgba(123, 47, 190, 0.05);
+        }
+
+        .card h3 {
+            font-family: 'Angry', 'Montserrat', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+            color: #ffffff;
+        }
+
+        .card p {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+        }
+
+        .card .btn {
+            display: inline-block;
+            color: #b388ff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-bottom: 2px solid #7b2fbe;
+            padding-bottom: 3px;
+            transition: 0.3s;
+        }
+
+        .card .btn:hover {
+            color: #ffffff;
+            border-bottom-color: #b388ff;
+            letter-spacing: 1px;
+        }
+
+        /* ===== СЕКЦИИ ===== */
+        .section-block {
+            padding: 20px 0 60px;
+            border-top: 1px solid rgba(123, 47, 190, 0.1);
+        }
+
+        .section-block .content {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            color: #d0d0d0;
+        }
+
+        /* ===== ПРОЕКТЫ: ГОРИЗОНТАЛЬНЫЙ СКРОЛЛ ===== */
+        .projects-scroll {
+            display: flex;
+            gap: 28px;
+            overflow-x: auto;
+            padding: 20px 4px 40px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            cursor: grab;
+        }
+
+        .projects-scroll::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .projects-scroll::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+        .projects-scroll::-webkit-scrollbar-thumb {
+            background: #7b2fbe;
+            border-radius: 8px;
+        }
+
+        .project-item {
+            flex: 0 0 280px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(123, 47, 190, 0.2);
+            border-radius: 16px;
+            padding: 16px;
+            scroll-snap-align: start;
+            transition: 0.3s;
+            cursor: pointer;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-item:hover {
+            transform: scale(1.02);
+            border-color: #7b2fbe;
+            box-shadow: 0 0 30px rgba(123, 47, 190, 0.15);
+        }
+
+        .project-item .thumb {
+            width: 100%;
+            height: 180px;
+            background: #1a0533;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #7b2fbe;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+
+        .project-item .thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-item h4 {
+            font-family: 'Angry', 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #ffffff;
+        }
+
+        .project-item p {
+            color: #b0b0b0;
+            font-size: 0.85rem;
+            flex: 1;
+        }
+
+        .project-item .tag {
+            font-size: 0.7rem;
+            color: #b388ff;
+            background: rgba(123, 47, 190, 0.15);
+            padding: 4px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 8px;
+            align-self: flex-start;
+        }
+  /* ===== МОДАЛЬНОЕ ОКНО (скролл всего окна) ===== */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: #141414;
+    border: 1px solid #7b2fbe;
+    border-radius: 20px;
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto; /* ← скролл всего окна */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+}
+
+/* Стилизация скролла */
+.modal-content::-webkit-scrollbar {
+    width: 4px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: #7b2fbe;
+    border-radius: 8px;
+}
+
+/* ===== ЗАКРЫТИЕ ===== */
+.modal-content .close {
+    position: sticky;
+    top: 16px;
+    float: right;
+    font-size: 2rem;
+    color: #888;
+    cursor: pointer;
+    transition: 0.3s;
+    background: none;
+    border: none;
+    z-index: 10;
+    line-height: 1;
+    margin: 16px 20px 0 0;
+}
+
+.modal-content .close:hover {
+    color: #ffffff;
+    transform: rotate(90deg);
+}
+
+/* ===== ВЕРХНЯЯ ЧАСТЬ: ТЕКСТ ===== */
+.modal-text {
+    padding: 0 32px 20px;
+    flex-shrink: 0;
+}
+
+.modal-text {
+    padding: 0 24px 6px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.modal-text h2 {
+    font-family: 'Angry', 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+    padding: 0 40px 0 40px; /* ← одинаковые отступы слева и справа */
+    text-align: center;
+    line-height: 1.2;
+}
+
+.modal-text .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+    justify-content: center;
+}
+
+.modal-text .project-tags span {
+    background: rgba(123, 47, 190, 0.15);
+    color: #b388ff;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.modal-text p {
+    color: #d0d0d0;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    text-align: left;
+    margin: 0;
+}
+.modal-text p b,
+.modal-text p strong {
+    color: #b388ff;
+    font-weight: 700;
+}
+.modal-text .rating-in-modal {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(123, 47, 190, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.modal-text .rating-in-modal .stars {
+    display: flex;
+    gap: 4px;
+}
+
+.modal-text .rating-in-modal .star {
+    font-size: 1.4rem;
+    color: #444;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.modal-text .rating-in-modal .star.active {
+    color: #ffd700;
+}
+
+.modal-text .rating-in-modal .star:hover {
+    transform: scale(1.2);
+    color: #ffd700;
+}
+
+.modal-text .rating-in-modal .rating-info {
+    color: #b0b0b0;
+    font-size: 0.85rem;
+}
+
+.modal-text .rating-in-modal .rating-info .score {
+    color: #ffd700;
+    font-weight: 700;
+}
+
+/* ===== ГАЛЕРЕЯ (без полей, ровно) ===== */
+.modal-gallery {
+    padding: 0 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-gallery .gallery-item {
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-gallery .gallery-item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 10px;
+}
+
+/* ===== АДАПТИВ (телефон) ===== */
+@media (max-width: 700px) {
+    .modal-content {
+        max-height: 95vh;
+    }
+    
+    .modal-text {
+        padding: 0 20px 16px;
+    }
+    
+    @media (max-width: 700px) {
+    .modal-text h2 {
+        font-size: 1.4rem;
+        padding: 0 40px 4px 0;
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-text h2 {
+        font-size: 1.1rem;
+        padding: 0 30px 4px 0;
+        max-width: 75%;
+    }
+}
+    
+    .modal-text p {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+    
+    .modal-text .project-tags span {
+        font-size: 0.65rem;
+        padding: 3px 10px;
+    }
+    
+    .modal-gallery {
+        padding: 0 20px 20px;
+    }
+    
+    .modal-gallery .gallery-item img {
+        max-height: 250px;
+    }
+    
+    .modal-content .close {
+        top: 12px;
+        right: 16px;
+        font-size: 1.6rem;
+        margin: 12px 16px 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-text {
+        padding: 0 14px 12px;
+    }
+    
+    .modal-text h2 {
+        font-size: 1.1rem;
+    }
+    
+    .modal-text p {
+        font-size: 0.75rem;
+    }
+    
+    .modal-gallery {
+        padding: 0 14px 14px;
+    }
+    
+    .modal-gallery .gallery-item img {
+        max-height: 180px;
+    }
+    
+    .modal-content .close {
+        font-size: 1.4rem;
+        margin: 10px 12px 0 0;
+    }
+}
+        /* ===== МИНИ-ИГРА (фото слева, игра справа) ===== */
+        .game-layout {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            margin: 30px 0 20px;
+            flex-wrap: wrap;
+        }
+
+        .game-photo {
+            flex: 1;
+            min-width: 200px;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 2px solid #7b2fbe;
+            box-shadow: 0 0 30px rgba(123, 47, 190, 0.2);
+            background: #1a0533;
+            aspect-ratio: 1/1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .game-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .game-area {
+            flex: 1.2;
+            min-width: 260px;
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(123, 47, 190, 0.2);
+            border-radius: 20px;
+            padding: 28px 24px;
+            text-align: center;
+        }
+
+        .game-area .number {
+            font-family: 'Angry', 'Montserrat', sans-serif;
+            font-size: 4rem;
+            color: #b388ff;
+            margin-bottom: 4px;
+        }
+
+        .game-area .hint {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+        }
+
+        .game-area .input-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .game-area input {
+            padding: 10px 14px;
+            border-radius: 12px;
+            border: 1px solid #7b2fbe;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 1rem;
+            width: 140px;
+            text-align: center;
+            outline: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .game-area input:focus {
+            border-color: #b388ff;
+            box-shadow: 0 0 20px rgba(123, 47, 190, 0.2);
+        }
+
+        .game-area .g-btn {
+            padding: 10px 24px;
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #7b2fbe, #4a148c);
+            color: white;
+            font-weight: 700;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .game-area .g-btn:hover {
+            transform: scale(0.96);
+            box-shadow: 0 0 30px rgba(123, 47, 190, 0.3);
+        }
+
+        .game-area .message {
+            margin-top: 14px;
+            min-height: 28px;
+            font-weight: 500;
+        }
+
+        .game-stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+
+        .game-stats .stat-item {
+            text-align: center;
+        }
+
+        .game-stats .stat-num {
+            font-family: 'Angry', 'Montserrat', sans-serif;
+            font-size: 2rem;
+            color: #b388ff;
+        }
+
+        .game-stats .stat-label {
+            font-size: 0.75rem;
+            color: #b0b0b0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .reset-btn {
+            background: transparent;
+            border: 1px solid #7b2fbe;
+            color: #b388ff;
+            padding: 6px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            transition: 0.3s;
+            margin-top: 6px;
+        }
+
+        .reset-btn:hover {
+            background: #7b2fbe;
+            color: white;
+        }
+
+        /* ===== ФУТЕР ===== */
+        footer {
+            border-top: 1px solid rgba(123, 47, 190, 0.15);
+            padding: 28px 0 36px;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        footer .counter {
+            color: #b388ff;
+            font-weight: 600;
+        }
+
+        /* ===== АДАПТИВ ===== */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            nav {
+                gap: 20px;
+            }
+            nav a {
+                font-size: 0.9rem;
+            }
+
+            .game-layout {
+                flex-direction: column;
+            }
+
+            .game-photo {
+                width: 100%;
+                max-width: 300px;
+                aspect-ratio: 1/1;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-item {
+                flex: 0 0 220px;
+            }
+
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            .hero-avatar {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        /* ===== СВЕТЯЩИЕСЯ ЗАГОЛОВКИ ПРИ СКРОЛЛЕ ===== */
+.section-title {
+    text-align: center;
+    font-family: 'Angry', 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 60px 0 16px;
+    color: #ffffff;
+    transition: all 0.6s ease;
+    opacity: 0.3;
+    transform: scale(0.9);
+    text-shadow: none;
+}
+
+.section-title.visible {
+    opacity: 1;
+    transform: scale(1);
+    background: linear-gradient(135deg, #ffffff, #b388ff, #7b2fbe, #b388ff);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glowPulse 2s ease-in-out infinite;
+    text-shadow: 0 0 40px rgba(123, 47, 190, 0.5);
+    filter: drop-shadow(0 0 20px rgba(123, 47, 190, 0.3));
+}
+
+@keyframes glowPulse {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Дополнительное свечение вокруг заголовка */
+.section-title.visible::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(ellipse, rgba(123, 47, 190, 0.15), transparent 70%);
+    filter: blur(40px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.section-title-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+/* ===== КАРТОЧКИ "О СЕБЕ" (текст сверху, картинка снизу) ===== */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.about-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(123, 47, 190, 0.15);
+    border-radius: 16px;
+    padding: 20px 20px 16px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateX(-40px);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Появление слева направо */
+.about-card.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Задержка для каждой карточки */
+.about-card:nth-child(1) { transition-delay: 0s; }
+.about-card:nth-child(2) { transition-delay: 0.1s; }
+.about-card:nth-child(3) { transition-delay: 0.2s; }
+.about-card:nth-child(4) { transition-delay: 0.3s; }
+.about-card:nth-child(5) { transition-delay: 0.4s; }
+.about-card:nth-child(6) { transition-delay: 0.5s; }
+
+.about-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    border-color: #7b2fbe;
+    box-shadow: 0 8px 40px rgba(123, 47, 190, 0.15);
+    background: rgba(123, 47, 190, 0.05);
+}
+
+/* Текст сверху */
+.about-card .card-text {
+    flex: 1;
+    margin-bottom: 12px;
+}
+
+.about-card .card-text h4 {
+    font-family: 'Angry', 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+}
+
+.about-card .card-text p {
+    color: #b0b0b0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.about-card .card-text .tag {
+    display: inline-block;
+    background: rgba(123, 47, 190, 0.15);
+    color: #b388ff;
+    padding: 2px 12px;
+    border-radius: 12px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+}
+
+/* Картинка снизу */
+/* ===== КАРТИНКА (без полей) ===== */
+.about-card .card-image {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #1a0533;
+    border: 1px solid rgba(123, 47, 190, 0.1);
+    transition: 0.3s;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.about-card .card-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ← меняем contain на cover */
+    transition: 0.5s;
+    display: block;
+}
+
+.about-card:hover .card-image {
+    border-color: #7b2fbe;
+    box-shadow: 0 0 30px rgba(123, 47, 190, 0.1);
+}
+
+.about-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+/* Адаптив */
+@media (max-width: 600px) {
+    .about-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 16px;
+    }
+    
+    .about-card .card-image {
+        height: 100px;
+    }
+    
+    .about-card .card-text h4 {
+        font-size: 0.95rem;
+    }
+    
+    .about-card .card-text p {
+        font-size: 0.75rem;
+    }
+}
+/* ===== МИНИ-ИГРА (игра слева, фото справа) ===== */
+.game-layout {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin: 30px 0 20px;
+    flex-wrap: wrap;
+}
+
+.game-area {
+    flex: 1.2;
+    min-width: 260px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(123, 47, 190, 0.2);
+    border-radius: 20px;
+    padding: 28px 24px;
+    text-align: center;
+    order: 1; /* ← игра первая */
+}
+
+.game-photo {
+    flex: 0 0 380;
+    width: 380px;
+    height: 380px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid #7b2fbe;
+    box-shadow: 0 0 30px rgba(123, 47, 190, 0.2);
+    background: #1a0533;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 2; /* ← фото второе */
+}
+
+/* Адаптив: на телефоне игра сверху, фото снизу */
+@media (max-width: 768px) {
+    .game-layout {
+        flex-direction: column;
+    }
+    
+    .game-area {
+        order: 1; /* ← игра сверху */
+        width: 100%;
+    }
+    
+    .game-photo {
+        order: 2; /* ← фото снизу */
+        width: 100%;
+        max-width: 300px;
+        aspect-ratio: 1/1;
+    }
+}
+/* ===== КОНТАКТЫ (иконки с анимацией) ===== */
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-item {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(123, 47, 190, 0.15);
+    border-radius: 16px;
+    padding: 24px;
+    width: 130px !important;  /* ← добавил !important */
+    height: 130px !important; /* ← добавил !important */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateX(-40px);
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+}
+
+.contact-item.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.contact-item:nth-child(1) { transition-delay: 0s; }
+.contact-item:nth-child(2) { transition-delay: 0.1s; }
+.contact-item:nth-child(3) { transition-delay: 0.2s; }
+.contact-item:nth-child(4) { transition-delay: 0.3s; }
+.contact-item:nth-child(5) { transition-delay: 0.4s; }
+
+.contact-item:hover {
+    transform: translateY(-8px) scale(1.05);
+    border-color: #7b2fbe;
+    box-shadow: 0 8px 40px rgba(123, 47, 190, 0.2);
+    background: rgba(123, 47, 190, 0.08);
+}
+
+/* Иконки */
+.contact-item .icon {
+    font-size: 3,2 rem;
+    line-height: 1;
+    transition: 0.3s;
+}
+
+.contact-item:hover .icon {
+    transform: scale(1.1);
+}
+
+.contact-item .label {
+    font-size: 0.85rem;
+    color: #b0b0b0;
+    margin-top: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+/* ===== ВСПЛЫВАЮЩАЯ ПОЧТА ===== */
+.email-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(10, 10, 10, 0.95);
+    border: 2px solid #7b2fbe;
+    border-radius: 20px;
+    padding: 30px 40px;
+    z-index: 10000;
+    text-align: center;
+    box-shadow: 0 0 60px rgba(123, 47, 190, 0.3);
+    min-width: 320px;
+}
+
+.email-popup.show {
+    display: block;
+    animation: popIn 0.4s ease forwards;
+}
+
+.email-popup .email-address {
+    font-size: 1.3rem;
+    color: #b388ff;
+    font-weight: 600;
+    margin: 10px 0 16px;
+    word-break: break-all;
+}
+
+.email-popup .copy-btn {
+    background: linear-gradient(135deg, #7b2fbe, #4a148c);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.email-popup .copy-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(123, 47, 190, 0.4);
+}
+
+.email-popup .close-popup {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 1.5rem;
+    color: #888;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: 0.3s;
+}
+
+.email-popup .close-popup:hover {
+    color: #fff;
+    transform: rotate(90deg);
+}
+
+@keyframes popIn {
+    0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+
+/* Адаптив */
+@media (max-width: 600px) {
+    .contact-item {
+        width: 70px;
+        height: 70px;
+        padding: 14px;
+    }
+    .contact-item .icon {
+        font-size: 1.8rem;
+    }
+    .contact-item .label {
+        font-size: 0.5rem;
+    }
+    .email-popup {
+        min-width: 280px;
+        padding: 24px 20px;
+    }
+    .email-popup .email-address {
+        font-size: 1rem;
+    }
+}
+/* ===== КОНТАКТЫ (иконки Font Awesome) ===== */
+.contact-item .icon {
+    font-size: 2.2rem;
+    line-height: 1;
+    transition: 0.3s;
+    color: #ffffff;
+}
+
+.contact-item .icon i {
+    display: block;
+}
+
+.contact-item:hover .icon {
+    transform: scale(1.1);
+}
+
+.contact-item:hover .icon i {
+    color: #b388ff;
+}
+/* ===== КОНТАКТЫ (с Font Awesome) ===== */
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-item {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(123, 47, 190, 0.15);
+    border-radius: 16px;
+    padding: 20px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateX(-40px);
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+}
+
+.contact-item.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.contact-item:nth-child(1) { transition-delay: 0s; }
+.contact-item:nth-child(2) { transition-delay: 0.1s; }
+.contact-item:nth-child(3) { transition-delay: 0.2s; }
+.contact-item:nth-child(4) { transition-delay: 0.3s; }
+.contact-item:nth-child(5) { transition-delay: 0.4s; }
+.contact-item:nth-child(6) { transition-delay: 0.5s; }
+
+.contact-item:hover {
+    transform: translateY(-8px) scale(1.05);
+    border-color: #7b2fbe;
+    box-shadow: 0 8px 40px rgba(123, 47, 190, 0.2);
+    background: rgba(123, 47, 190, 0.08);
+}
+
+/* Иконки Font Awesome */
+.contact-item .icon {
+    font-size: 2.2rem;
+    line-height: 1;
+    transition: 0.3s;
+    color: #ffffff;
+}
+
+.contact-item .icon i {
+    display: block;
+}
+
+.contact-item:hover .icon {
+    transform: scale(1.1);
+}
+
+.contact-item:hover .icon i {
+    color: #b388ff;
+}
+
+.contact-item .label {
+    font-size: 0.6rem;
+    color: #b0b0b0;
+    margin-top: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Адаптив */
+@media (max-width: 600px) {
+    .contact-item {
+        width: 70px;
+        height: 70px;
+        padding: 14px;
+    }
+    .contact-item .icon {
+        font-size: 1.6rem;
+    }
+    .contact-item .label {
+        font-size: 0.5rem;
+        margin-top: 4px;
+    }
+    .contact-grid {
+        gap: 16px;
+    }
+}
+/* ===== ЗВЁЗДНЫЙ РЕЙТИНГ ДЛЯ ПРОЕКТОВ ===== */
+.project-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(123, 47, 190, 0.1);
+    flex-wrap: wrap;
+}
+
+.project-rating .stars {
+    display: flex;
+    gap: 2px;
+}
+
+.project-rating .stars .star {
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #444;
+    transition: 0.2s;
+    user-select: none;
+}
+
+.project-rating .stars .star:hover,
+.project-rating .stars .star.active {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+.project-rating .stars .star:hover ~ .star {
+    color: #444;
+}
+
+.project-rating .rating-info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: #b0b0b0;
+}
+
+.project-rating .rating-info .score {
+    color: #ffd700;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.project-rating .rating-info .count {
+    color: #666;
+    font-size: 0.75rem;
+}
+
+.project-rating .rating-message {
+    font-size: 0.7rem;
+    color: #7bed9f;
+    margin-left: 4px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.project-rating .rating-message.show {
+    opacity: 1;
+}
+/* ===== АНИМИРОВАННЫЕ ЛИНИИ ВОКРУГ ФОТО ===== */
+.hero-aurora-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+/* ===== КРУГОВЫЕ ЛИНИИ ===== */
+.hero-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: ringPulse 4s ease-in-out infinite;
+}
+
+/* Кольцо 1 - фиолетовое */
+.hero-ring:nth-child(1) {
+    width: 110%;
+    height: 110%;
+    border-color: rgba(123, 47, 190, 0.3);
+    animation-delay: 0s;
+}
+
+/* Кольцо 2 - синее */
+.hero-ring:nth-child(2) {
+    width: 125%;
+    height: 125%;
+    border-color: rgba(179, 136, 255, 0.2);
+    animation-delay: 1s;
+    animation-duration: 5s;
+}
+
+/* Кольцо 3 - розовое */
+.hero-ring:nth-child(3) {
+    width: 140%;
+    height: 140%;
+    border-color: rgba(224, 64, 251, 0.15);
+    animation-delay: 2s;
+    animation-duration: 6s;
+}
+
+/* Кольцо 4 - голубое (пунктирное) */
+.hero-ring:nth-child(4) {
+    width: 155%;
+    height: 155%;
+    border: 1px dashed rgba(0, 188, 212, 0.2);
+    animation-delay: 3s;
+    animation-duration: 7s;
+}
+
+@keyframes ringPulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.05);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+/* ===== ЛИНИИ СВЕЧЕНИЯ (лучи) ===== */
+.hero-rays {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.hero-ray {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 60%;
+    background: linear-gradient(to top, transparent, rgba(123, 47, 190, 0.2), transparent);
+    transform-origin: center bottom;
+    animation: rayRotate 20s linear infinite;
+}
+
+.hero-ray:nth-child(1) { transform: translate(-50%, -100%) rotate(0deg); }
+.hero-ray:nth-child(2) { transform: translate(-50%, -100%) rotate(30deg); animation-delay: 1.5s; }
+.hero-ray:nth-child(3) { transform: translate(-50%, -100%) rotate(60deg); animation-delay: 3s; }
+.hero-ray:nth-child(4) { transform: translate(-50%, -100%) rotate(90deg); animation-delay: 4.5s; }
+.hero-ray:nth-child(5) { transform: translate(-50%, -100%) rotate(120deg); animation-delay: 6s; }
+.hero-ray:nth-child(6) { transform: translate(-50%, -100%) rotate(150deg); animation-delay: 7.5s; }
+.hero-ray:nth-child(7) { transform: translate(-50%, -100%) rotate(180deg); animation-delay: 9s; }
+.hero-ray:nth-child(8) { transform: translate(-50%, -100%) rotate(210deg); animation-delay: 10.5s; }
+.hero-ray:nth-child(9) { transform: translate(-50%, -100%) rotate(240deg); animation-delay: 12s; }
+.hero-ray:nth-child(10) { transform: translate(-50%, -100%) rotate(270deg); animation-delay: 13.5s; }
+.hero-ray:nth-child(11) { transform: translate(-50%, -100%) rotate(300deg); animation-delay: 15s; }
+.hero-ray:nth-child(12) { transform: translate(-50%, -100%) rotate(330deg); animation-delay: 16.5s; }
+
+@keyframes rayRotate {
+    0% {
+        opacity: 0.3;
+        transform: translate(-50%, -100%) rotate(var(--rotation, 0deg));
+    }
+    25% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    75% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.3;
+        transform: translate(-50%, -100%) rotate(calc(var(--rotation, 0deg) + 360deg));
+    }
+}
+    </style>
+</head>
+<body>
+
+<!-- ===== ФОН: СЕВЕРНОЕ СИЯНИЕ ===== -->
+<div class="aurora-bg">
+    <div class="aurora-layer"></div>
+    <div class="aurora-layer"></div>
+    <div class="aurora-layer"></div>
+    <div class="aurora-layer"></div>
+    <div class="aurora-layer"></div>
+    
+    <div class="stars">
+        <span class="star-dot"></span>
+        <span class="star-dot"></span>
+        <span class="star-dot"></span>
+        <span class="star-dot"></span>
+        <span class="star-dot"></span>
+        <span class="star-dot"></span>
+        <span class="star-dot"></span>
+        <span class="star-dot"></span>
+        <span class="star-dot"></span>
+        <span class="star-dot"></span>
+    </div>
+</div>
+
+<!-- ===== ШАПКА ===== -->
+<header>
+    <div class="container">
+        <nav>
+            <a href="#about">О СЕБЕ</a>
+            <a href="#projects">РАБОТЫ</a>
+            <a href="#game-section">МИНИ-ИГРА</a>
+            <a href="#contact">КОНТАКТЫ</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <!-- ===== ГЛАВНАЯ ===== -->
+    <section class="hero container">
+        <!-- ВСТАВЬ СВОЁ ФОТО СЮДА: поменяй src="photo.jpg" на путь к твоему фото -->
+        <div class="hero-aurora-wrapper">
+    <!-- ===== ЛИНИИ (в отдельном контейнере) ===== -->
+    <div class="hero-lines-container">
+        <div class="hero-ring"></div>
+        <div class="hero-ring"></div>
+        <div class="hero-ring"></div>
+        <div class="hero-ring"></div>
+        
+        <div class="hero-rays">
+            <div class="hero-ray" style="--rotation: 0deg;"></div>
+            <div class="hero-ray" style="--rotation: 30deg;"></div>
+            <div class="hero-ray" style="--rotation: 60deg;"></div>
+            <div class="hero-ray" style="--rotation: 90deg;"></div>
+            <div class="hero-ray" style="--rotation: 120deg;"></div>
+            <div class="hero-ray" style="--rotation: 150deg;"></div>
+            <div class="hero-ray" style="--rotation: 180deg;"></div>
+            <div class="hero-ray" style="--rotation: 210deg;"></div>
+            <div class="hero-ray" style="--rotation: 240deg;"></div>
+            <div class="hero-ray" style="--rotation: 270deg;"></div>
+            <div class="hero-ray" style="--rotation: 300deg;"></div>
+            <div class="hero-ray" style="--rotation: 330deg;"></div>
+        </div>
+    </div>
+    
+    <!-- ===== ФОТО ===== -->
+    <div class="hero-avatar" style="position: relative; z-index: 2;">
+        <img src="https://sun9-6.vkuserphoto.ru/s/v1/ig2/HOMKCtDJvPXHQmkLV545unvojYVhVOpNspJBSxealGBNO7FfwmGMD-TYwkhnvlGvxC0wC8G4kSYxOqj60MuLrKNC.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1280x0" alt="Фото Никиты" />
+    </div>
+    
+    <div class="aurora-sparkles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+        <h1>
+            ДОБРО ПОЖАЛОВАТЬ<br />
+            <span class="highlight">САЙТ-ПОРТФОЛИО ЮДИНА НИКИТЫ</span>
+        </h1>
+        <p>Графический дизайн · Брендинг · Креатив</p>
+    </section>
+
+   <!-- ===== О СЕБЕ (карточки: текст сверху, картинка снизу) ===== -->
+<section class="section-block container" id="about">
+    <div class="section-title-wrapper">
+        <h2 class="section-title">О СЕБЕ</h2>
+    </div>
+    
+    <div class="about-grid">
+        <!-- КАРТОЧКА 1 -->
+        <div class="about-card">
+            <div class="card-text">
+                <h4>Кто я?</h4>
+                <p>Мне 22 года и я студент-выпусник АлтГУ 2026 года: Государственное и муниципальное управление + переподготовка "Цифровой дизайн"; поступаю в магистратуру</p>
+                <span class="tag">#студент</span>
+            </div>
+            <div class="card-image">
+                <img src="https://i.pinimg.com/1200x/77/1c/cc/771ccc785cf6f47c63ff1fb3549c7cfe.jpg" alt="Кто я" />
+            </div>
+        </div>
+
+        <!-- КАРТОЧКА 2 -->
+        <div class="about-card">
+            <div class="card-text">
+                <h4>Цель</h4>
+                <p>Получить работу мечты в качестве графического дизайнера в крупной компании или же основать свое дизайнерское агентство</p>
+                <span class="tag">#стремление</span>
+            </div>
+            <div class="card-image">
+                <img src="https://i.pinimg.com/736x/d7/b8/cd/d7b8cd2454a87a07f482d321a57b7bda.jpg" alt="Мой стиль" />
+            </div>
+        </div>
+
+        <!-- КАРТОЧКА 3 -->
+        <div class="about-card">
+            <div class="card-text">
+                <h4>Проекты</h4>
+                <p>В данный момент являюсь SMM-менеджером в школе по подготовке к экзаменам, участник дизайнерских проектов и конкурсов, бывший креативный директор сообщества в сети ВКонтакте</p>
+                <span class="tag">#работа</span>
+            </div>
+            <div class="card-image">
+                <img src="https://i.pinimg.com/736x/83/89/57/8389570dba3506023d21cd14bd9a1f71.jpg" alt="Опыт" />
+            </div>
+        </div>
+
+        <!-- КАРТОЧКА 4 -->
+        <div class="about-card">
+            <div class="card-text">
+                <h4>Инструменты</h4>
+                <p>Adobe Photoshop - мой главный и практически единственный инструмент работы; имеются базовые навыки работы в Figma; активно использую ИИ (ChatGPT, DeepSeek, Gemini, Arena AI)</p>
+                <span class="tag">#инструменты</span>
+            </div>
+            <div class="card-image">
+                <img src="https://i.pinimg.com/1200x/2d/57/d0/2d57d06e65f73fd1f61b7ef970deae33.jpg" alt="Инструменты" />
+            </div>
+        </div>
+
+        <!-- КАРТОЧКА 5 -->
+        <div class="about-card">
+            <div class="card-text">
+                <h4>Стиль</h4>
+                <p>В основном использую стиль минимализм, но очень люблю эксперементировать с дизайном, находить что-то новое и пробовать себя в этом деле - главное самовыражение и саморазвитие!</p>
+                <span class="tag">#эстетика</span>
+            </div>
+            <div class="card-image">
+                <img src="https://i.pinimg.com/736x/44/0b/71/440b71c33875ae6869b14bbadeee9b12.jpg" alt="Образование" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ПРОЕКТЫ ===== -->
+<section class="section-block container" id="projects">
+    <div class="section-title-wrapper">
+        <h2 class="section-title">РАБОТЫ</h2>
+    </div>
+    <p class="section-sub">мои проекты и достижения</p>
+
+    <div class="projects-scroll" id="projectsScroll">
+
+       <!-- ПРОЕКТ 1 с несколькими картинками -->
+<div class="project-item" 
+     data-title="Айдентика Алтайского края" 
+     data-desc="<b>Задача:</b> Создать бренд, который различит два Алтая, уйдет от аграрного стереотипа и объединит усилия органов государственной власти.
+<b>Концепция:</b> «Перекресток времен» - синтез археологии, индустрии и культуры региона.
+<b>Ядро:</b> Буква «Й» с динамичной краткой (телефонная трубка → гора, колос, пещера). Цвета с флага края + строгий монохром.
+<b>Результат:</b> Брендбук, макеты для навигации, сайтов, сувениров." 
+     data-images='["https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/026a8e2f-6000-434b-8ab2-1471e2824d43_954817352.png","https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/9305ab9c-e4cb-4ea4-876b-070d5c49e096_1182089244.jpg","https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/ee804f57-3f78-42d5-b4a1-c96fb23265f5_1348279348.jpg","https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/413196f9-8434-44dd-a30a-fab07dc19b9a_1772206791.png", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/d89118c8-d5da-4c0c-a0e3-db58ef96f800_678832848.png", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/5e739285-074d-485f-bc93-e5838236765b_274945692.png", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/87781328-a539-406c-a18e-3fd07e212c6a_1374012266.png"]'
+     data-tags='["#территориальный_брендинг","#айдентика","#геобрендинг","#логотип_региона"]'>
+    <div class="thumb">
+        <img src="https://cdn.dprofile.ru/files/78/77393/COVER/6651b000-2b0c-4c7a-aa30-a30c402eb4ed_1247841321.png" alt="Айдентика Алтайского края" />
+    </div>
+    <h4>Айдентика Алтайского края</h4>
+    <p>Территориальный брендинг</p>
+    <span class="tag">#территориальный_брендинг</span>
+    <span class="tag">#айдентика</span>
+    <span class="tag">#дипломная_работа</span>
+    
+    <div class="project-rating" data-project="project1">
+        <div class="stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+        <div class="rating-info">
+            <span class="score" id="score-project1">0</span>
+            <span class="count">(<span id="count-project1">0</span>)</span>
+        </div>
+        <span class="rating-message" id="msg-project1">✅ Спасибо!</span>
+    </div>
+</div>
+
+        <!-- ПРОЕКТ 2 -->
+       <div class="project-item" 
+     data-title="Буклет приемной кампании МИЭМИС"
+     data-desc="<b>Год выпуска:</b> 2026
+<b>Целевая аудитория:</b> абитуриенты 9–11 классов, их родители, партнёры института.
+<b>Содержательное наполнение:</b> буклет информирует о возможностях обучения в МИЭМИС, о направлениях обучения с указанием необходимой информации.
+<b>Дизайн-концепция:</b> Современный минимализм с акцентными цветовыми блоками, инфографика для перечисления партнёров, модульная сетка для удобного восприятия большого объёма информации. Повторяющийся слоган выполняет функцию связующего элемента между разделами." 
+     data-images='["https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/c99855c9-ad20-47df-b52b-b2f4e29c121c_381712284.png", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/dea69efe-85c8-4c15-9f11-0d23ae477bad_257102798.png"]'
+     data-tags='["#тполиграфия","#буклет","#МИЭМИС"]'>
+    <div class="thumb">
+        <img src="https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/c99855c9-ad20-47df-b52b-b2f4e29c121c_381712284.png" alt="Айдентика Алтайского края" />
+    </div>
+            <h4>Буклет приемной кампании МИЭМИС</h4>
+            <p>Работа над раздаточным материалом института</p>
+            <span class="tag">#полиграфия</span>
+            <span class="tag">#буклет</span>
+
+            <div class="project-rating" data-project="project2">
+                <div class="stars">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <div class="rating-info">
+                    <span class="score" id="score-project2">0</span>
+                    <span class="count">(<span id="count-project2">0</span>)</span>
+                </div>
+                <span class="rating-message" id="msg-project2">✅ Спасибо!</span>
+            </div>
+        </div>
+
+        <!-- ПРОЕКТ 3 -->
+        <div class="project-item" 
+     data-title='Коллекция "Дикая любовь"'
+     data-desc="Любовь не знает границ — ни человеческих, ни звериных. В природе живут самые искренние, странные и трогательные истории о чувствах. Мы собрали пять из них и превратили в носимые признания. Каждый принт — это маленькая ода тому, на что готовы пойти существа ради своей второй половинки. Носи свою историю. Люби по-дикому." 
+     data-images='["https://media.licdn.com/dms/image/v2/D4E22AQFnNDXNfQHfYQ/feedshare-shrink_800/B4EZ.JoK1yHwAc-/0/1784720438518?e=1787184000&v=beta&t=GC6oxNO0yHmj822xkwJ2jvK1l4vHCY1CEvwqEKbXCes", "https://media.licdn.com/dms/image/v2/D4E22AQEfQzfSFQhO1w/feedshare-shrink_800/B4EZ.JoK5yIAAg-/0/1784720438650?e=1787184000&v=beta&t=KTtIMIu8obbqmHjv1uhBdSrKAaqXECG-AzVMywmsHeY", "https://media.licdn.com/dms/image/v2/D4E22AQHR-rOK8OTMLw/feedshare-shrink_800/B4EZ.JoKtSJ0Ac-/0/1784720437497?e=1787184000&v=beta&t=qlNY1vC9x8CYLw14RFEa7Pc_hOzNrPIVXV4p3UPR-ho", "https://media.licdn.com/dms/image/v2/D4E22AQElevcD2H9M3w/feedshare-shrink_800/B4EZ.JoKjeJUAc-/0/1784720436828?e=1787184000&v=beta&t=tsYUEZevep1qt5zg3HF1WToBnfcu6BWZF03PhZ649N8", "https://media.licdn.com/dms/image/v2/D4E22AQHp-NHyokeeQA/feedshare-shrink_800/B4EZ.JoKjrHkAg-/0/1784720436728?e=1787184000&v=beta&t=bU1Xa-q4og6H7lcB0nvVJhYfZOj-W3txqZ0HtydwT98", "https://media.licdn.com/dms/image/v2/D4E22AQHdw7fIndOKDw/feedshare-shrink_800/B4EZ.JoKsRKoAc-/0/1784720437059?e=1787184000&v=beta&t=o_VrPyS91ws3cL32L8tz7bbJ13woDxzcnjBNXrXynGc"]'
+     data-tags='["#дизайн_одежды","#дикая_любовь","#Befree"]'>
+    <div class="thumb">
+        <img src="https://media.licdn.com/dms/image/v2/D4E22AQFnNDXNfQHfYQ/feedshare-shrink_800/B4EZ.JoK1yHwAc-/0/1784720438518?e=1787184000&v=beta&t=GC6oxNO0yHmj822xkwJ2jvK1l4vHCY1CEvwqEKbXCes" alt="Айдентика Алтайского края" />
+    </div>
+            <h4>Коллекция "Дикая любовь"</h4>
+            <p>Конкурс принтов для новой коллекции для Befree Co:Create</p>
+            <span class="tag">#дизайн_одежды</span>
+            <span class="tag">#дикая_любовь</span>
+            <span class="tag">#Befree</span>
+            <div class="project-rating" data-project="project3">
+                <div class="stars">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <div class="rating-info">
+                    <span class="score" id="score-project3">0</span>
+                    <span class="count">(<span id="count-project3">0</span>)</span>
+                </div>
+                <span class="rating-message" id="msg-project3">✅ Спасибо!</span>
+            </div>
+        </div>
+
+        <!-- ПРОЕКТ 4 -->
+        <div class="project-item" 
+     data-title="Маскот Лола" 
+     data-desc="Лола — дерзкий и харизматичный персонаж с яркой внешностью: длинные заячьи уши, яркие зеленые глаза, бунтарский стиль (много сетки, яркий костюм с шортами, огромные разноцветные боты, пирсинг), пояс с буквой «С».
+
+Лола — воплощение непокорности и духа сопротивления. Она:
+Бунтарка — не признаёт авторитетов и всегда идёт против системы
+Энергичная — заряжает своей неуёмной энергией и жаждой действия
+Ироничная — её шутки остры, как пирсинг
+Преданная — за свою команду готова на всё, даже на безумные авантюры
+
+Проект создан в рамках конкурса маскотов для молодежного проекта Смелость" 
+     data-images='["https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/e825988e-d8ea-46b3-ad47-28c56d271ced_473568889.jpg", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/e4412d53-bec7-4bd9-8aca-c2113edf0bdc_2051018998.jpg", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/c4c5632c-2665-47b2-9872-4fa1a762b611_1614038818.jpg", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/f26dec4b-8c17-4f2b-9bb5-0e2a1e11dbae_695083179.jpg", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/e75bcfec-50c4-41b9-bf20-e9e9dc9b2261_1915995816.jpg", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/6205da27-a9ae-4fce-b8bf-719785e754fd_56637159.jpg", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/2458e47c-172b-49cc-b4c0-99be46e3eeff_1551336778.jpg", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/cb997e04-af70-4cb3-a125-be824bae64f0_779118366.jpg"]'
+     data-tags='["#маскот,"#смелость"]'>
+    <div class="thumb">
+        <img src="https://cdn.dprofile.ru/temp/CASE_IMAGE/f83f16ff-a790-4b42-9bf4-6c748900aea1_398483415.png" alt="Айдентика Алтайского края" />
+    </div>
+            <h4>Маскот Лола</h4>
+            <p>Участник конкурса маскотов для молодежного проекта "Смелость"</p>
+            <span class="tag">#маскот</span>
+            <span class="tag">#смелость</span>
+           
+            <div class="project-rating" data-project="project4">
+                <div class="stars">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <div class="rating-info">
+                    <span class="score" id="score-project4">0</span>
+                    <span class="count">(<span id="count-project4">0</span>)</span>
+                </div>
+                <span class="rating-message" id="msg-project4">✅ Спасибо!</span>
+            </div>
+        </div>
+
+        <!-- ПРОЕКТ 5 -->
+        <div class="project-item" 
+     data-title="Дизайн онлайн-симулятора Евровидения - Vk Eurovision 1st Edition" 
+     data-desc="<b>Vk Eurovision (Вк Евровидение)</b>: онлайн-симулятор конкурса международной песни Евровидения, работающий больше 5 лет среди фанатов конкурса (еврофанов). В 2025 году проект получил вторую жизнь для того, чтобы снова объединить фанатов под одной крышей. 
+
+Первый сезон обновленного проекта прошел в стиле Беларуси - <b>Минске</b>.
+Слоган: <b>Bring Your Melody</b> (Принеси свою мелодию).
+<b>Главный элемент дизайна:</b> белорусский орнамент в дополнение с неофициальными символами Беларуси (зубр, цапля, василек). 
+
+P.S. Проект является вымышленным и не несет коммерческую основу своей деятельности" 
+     data-images='["https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/dec76ca0-ee05-4934-98d1-9af43a913228_1672262762.png", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/63a2003e-702e-46b5-9d25-0c83f33d98a0_444305198.png", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/27ae6ef9-3a22-4204-a708-87e239566085_1330051417.png", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/5408842e-7a86-44ee-a148-7c500c2801f0_420408760.png", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/54ac3a1c-1fe6-46aa-a2e5-90491175f509_1016792297.png", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/deb0ecab-ee77-425e-b23f-23818c8932c1_256747633.png", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/89ae97ec-98bc-4cf5-a757-9edcc3850d05_663579063.png", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/430c018a-9b89-4bc0-8450-49f51d954856_1257950129.png", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/10f11cc1-165f-4bd6-91d4-5facc4b4e498_1666364308.png", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/2fe4ed12-1d1c-4da9-b69f-7a8f8469b6d6_1625858052.png", "https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/5beb5a2b-593b-4510-80cb-402686e59c69_1874689899.jpg"]'
+     data-tags='["#Eurovision","#VKEurovision", "#1Edition"]'>
+    <div class="thumb">
+        <img src="https://cdn.dprofile.ru/files/78/77393/CASE_IMAGE/dec76ca0-ee05-4934-98d1-9af43a913228_1672262762.png" alt="Айдентика Алтайского края" />
+    </div>
+            <h4>Дизайн Vk Eurovision 1st Edition</h4>
+            <p>Дизайн первого сезона возрожденного проекта для фанатов Евровидения</p>
+            <span class="tag">#Eurovision</span>
+            <span class="tag">#VKEurovision</span>
+             <span class="tag">#1Edition</span>
+           
+            <div class="project-rating" data-project="project5">
+                <div class="stars">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <div class="rating-info">
+                    <span class="score" id="score-project5">0</span>
+                    <span class="count">(<span id="count-project5">0</span>)</span>
+                </div>
+                <span class="rating-message" id="msg-project5">✅ Спасибо!</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ===== МИНИ-ИГРА (фото слева, игра справа) ===== -->
+<!-- ===== МИНИ-ИГРА (игра слева, фото справа) ===== -->
+<section class="section-block container" id="game-section">
+    <div class="section-title-wrapper">
+        <h2 class="section-title">МИНИ-ИГРА</h2>
+    </div>
+    <p class="section-sub">поиграй пока листаешь сайт</p>
+
+    <div class="game-layout">
+        <!-- Игра слева -->
+        <div class="game-area">
+            <div class="number" id="gameNumber">??</div>
+            <div class="hint" id="gameHint">Угадай число 1–100</div>
+
+            <div class="input-group">
+                <input type="number" id="guessInput" min="1" max="100" placeholder="число" />
+                <button class="g-btn" id="guessBtn">Проверить</button>
+            </div>
+            <div class="message" id="gameMessage"></div>
+
+            <div class="game-stats">
+                <div class="stat-item">
+                    <div class="stat-num" id="attemptsLeft">5</div>
+                    <div class="stat-label">попыток</div>
+                </div>
+                <div class="stat-item">
+                    <button class="reset-btn" id="resetGameBtn">⟳ Новая</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Фото справа -->
+        <div class="game-photo">
+            <!-- ВСТАВЬ СВОЁ ФОТО -->
+            <img src="https://sun9-56.vkuserphoto.ru/s/v1/ig2/3QaGraVXwUMm2r3zD4cOxXlrcojufvyCRkoSJ1XFF_lEQqvbZ1upgGNv-sJI35_DSmcAC8CJTXnq9-axhdEySZqC.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1280x0" alt="Фото для игры" />
+        </div>
+    </div>
+</section>
+
+    <!-- ===== КОНТАКТЫ ===== -->
+<section class="section-block container" id="contact">
+    <div class="section-title-wrapper">
+        <h2 class="section-title">КОНТАКТЫ</h2>
+    </div>
+    <p class="section-sub">свяжитесь со мной</p>
+
+    <div class="contact-grid">
+        <!-- Email (открывает попап) -->
+        <div class="contact-item" id="emailBtn">
+            <span class="icon">📧</span>
+            <span class="label" style="font-size: 16px;">Email</span>
+        </div>
+
+        <!-- ВКонтакте -->
+        <a href="https://vk.ru/nikitayuda" target="_blank" class="contact-item">
+            <span class="icon"><i class="fab fa-vk"></i></span>
+            <span class="label" style="font-size: 16px;">ВКонтакте</span>
+        </a>
+
+        <!-- DProfile -->
+        <a href="https://dprofile.ru/nikitayuda" target="_blank" class="contact-item">
+            <span class="icon">	<i class="fab fa-behance"></i></span>
+            <span class="label" style="font-size: 16px;">DProfile</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/%D0%BD%D0%B8%D0%BA%D0%B8%D1%82%D0%B0-%D1%8E%D0%B4%D0%B8%D0%BD-463394424/" target="_blank" class="contact-item">
+            <span class="icon"><i class="fab fa-linkedin-in"></i></span>
+            <span class="label" style="font-size: 16px;">LinkedIn</span>
+        </a>
+
+        <!-- Telegram -->
+        <a href="https://t.me/nikitayudany" target="_blank" class="contact-item">
+            <span class="icon"><i class="fab fa-telegram-plane"></i></span>
+            <span class="label" style="font-size: 16px;">Telegram</span>
+        </a>
+    </div>
+</section>
+<!-- ===== ВСПЛЫВАЮЩЕЕ ОКНО ДЛЯ EMAIL ===== -->
+<div class="email-popup" id="emailPopup">
+    <button class="close-popup" id="closeEmailPopup">✕</button>
+    <div style="font-size: 2.5rem;">📧</div>
+    <div class="email-address" id="emailAddress">nikitaururka24@gmail.com</div>
+    <button class="copy-btn" id="copyEmailBtn">📋 Скопировать</button>
+</div>
+</main>
+<!-- ===== ПРИПИСКА ПОД КОНТАКТАМИ ===== -->
+<div style="text-align: center; margin-top: 30px; padding: 20px 24px; background: rgba(123, 47, 190, 0.05); border-radius: 16px; border: 1px solid rgba(123, 47, 190, 0.1);">
+    <p style="color: #b0b0b0; font-size: 0.85rem; margin: 0; line-height: 1.8;">
+        <span style="display: inline-block; background: rgba(255, 107, 107, 0.1); color: #ff6b6b; padding: 2px 12px; border-radius: 20px; font-weight: 600; font-size: 0.7rem; margin-right: 6px;">⚠️</span>
+        Telegram и LinkedIn признаны экстремистскими организациями и запрещены на территории Российской Федерации.
+        <br />
+        <span style="color: #666; font-size: 0.75rem;">Для связи используйте email или ВКонтакте.</span>
+    </p>
+</div>
+
+<!-- ===== ФУТЕР ===== -->
+<footer class="container">
+    <span>МИНИ-ИГРА · 00045</span>
+    <span>Официальный сайт Юдина Никита 2026</span>
+    <span class="counter">👁️ просмотров: <span id="viewCounter">0</span></span>
+</footer>
+
+<!-- ===== МОДАЛЬНОЕ ОКНО (текст сверху, картинки снизу) ===== -->
+<div class="modal" id="projectModal">
+    <div class="modal-content">
+        <button class="close" id="modalClose">&times;</button>
+        
+        <!-- ВЕРХНЯЯ ЧАСТЬ: ТЕКСТ -->
+        <div class="modal-text">
+            <h2 id="modalTitle">Название проекта</h2>
+            
+            <div class="project-tags" id="modalTags">
+                <span>#тег1</span>
+                <span>#тег2</span>
+                <span>#тег3</span>
+            </div>
+            
+            <p id="modalDesc">Описание проекта</p>
+            
+            <!-- Рейтинг -->
+            <div class="rating-in-modal">
+                <div class="stars" id="modalStars">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <div class="rating-info">
+                    ⭐ <span class="score" id="modalScore">0</span>
+                    (<span id="modalCount">0</span> оценок)
+                </div>
+            </div>
+        </div>
+        
+        <!-- НИЖНЯЯ ЧАСТЬ: ГАЛЕРЕЯ КАРТИНОК -->
+        <div class="modal-gallery" id="modalGallery">
+            <!-- Картинки будут добавляться через JavaScript -->
+        </div>
+    </div>
+</div>
+<!-- ===== СКРИПТ ===== -->
+<script>
+    // ===== 1. МИНИ-ИГРА =====
+    (function() {
+        let secret = 0;
+        let attempts = 5;
+        const maxAttempts = 5;
+        let gameOver = false;
+
+        const numberEl = document.getElementById('gameNumber');
+        const hintEl = document.getElementById('gameHint');
+        const messageEl = document.getElementById('gameMessage');
+        const inputEl = document.getElementById('guessInput');
+        const guessBtn = document.getElementById('guessBtn');
+        const attemptsEl = document.getElementById('attemptsLeft');
+        const resetBtn = document.getElementById('resetGameBtn');
+
+        function init() {
+            secret = Math.floor(Math.random() * 100) + 1;
+            attempts = maxAttempts;
+            gameOver = false;
+            numberEl.textContent = '??';
+            hintEl.textContent = 'Угадай число 1–100';
+            messageEl.textContent = '';
+            messageEl.style.color = '#b0b0b0';
+            attemptsEl.textContent = attempts;
+            inputEl.value = '';
+            inputEl.disabled = false;
+            guessBtn.disabled = false;
+            inputEl.focus();
+        }
+
+        function check() {
+            if (gameOver) {
+                messageEl.textContent = 'Игра окончена. Начни новую!';
+                messageEl.style.color = '#ffa500';
+                return;
+            }
+
+            const raw = inputEl.value.trim();
+            if (raw === '') {
+                messageEl.textContent = 'Введи число!';
+                messageEl.style.color = '#ffa500';
+                return;
+            }
+            const guess = Number(raw);
+            if (isNaN(guess) || guess < 1 || guess > 100) {
+                messageEl.textContent = 'Число от 1 до 100';
+                messageEl.style.color = '#ffa500';
+                return;
+            }
+
+            attempts--;
+            attemptsEl.textContent = attempts;
+
+            if (guess === secret) {
+                numberEl.textContent = secret;
+                messageEl.textContent = '🎉 Ты угадал! Победа!';
+                messageEl.style.color = '#7bed9f';
+                gameOver = true;
+                inputEl.disabled = true;
+                guessBtn.disabled = true;
+                hintEl.textContent = '✨ Ты крут!';
+                return;
+            }
+
+            if (attempts === 0) {
+                numberEl.textContent = secret;
+                messageEl.textContent = `😞 Попытки кончились. Было ${secret}`;
+                messageEl.style.color = '#ff6b6b';
+                gameOver = true;
+                inputEl.disabled = true;
+                guessBtn.disabled = true;
+                hintEl.textContent = 'Попробуй ещё';
+                return;
+            }
+
+            const diff = Math.abs(guess - secret);
+            let hint = '';
+            if (diff <= 5) hint = '🔥 Горячо!';
+            else if (diff <= 15) hint = '😮 Тепло';
+            else if (diff <= 30) hint = '🌤️ Прохладно';
+            else hint = '❄️ Холодно';
+
+            const dir = guess < secret ? '⬆️ больше' : '⬇️ меньше';
+            hintEl.textContent = `${hint} — нужно ${dir}`;
+            messageEl.textContent = `Попытка ${maxAttempts - attempts} из ${maxAttempts}`;
+            messageEl.style.color = '#b0b0b0';
+            inputEl.value = '';
+            inputEl.focus();
+        }
+
+        guessBtn.addEventListener('click', check);
+        inputEl.addEventListener('keydown', (e) => { if (e.key === 'Enter') check(); });
+        resetBtn.addEventListener('click', init);
+
+        init();
+    })();
+
+    // ===== 2. СЧЁТЧИК ПРОСМОТРОВ =====
+    (function() {
+        const span = document.getElementById('viewCounter');
+        let views = localStorage.getItem('portfolioViews');
+        if (views === null) views = 1;
+        else views = Number(views) + 1;
+        localStorage.setItem('portfolioViews', views);
+        span.textContent = views;
+    })();
+
+// ===== МОДАЛЬНОЕ ОКНО (текст сверху, картинки снизу) =====
+(function() {
+    const modal = document.getElementById('projectModal');
+    const closeBtn = document.getElementById('modalClose');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDesc = document.getElementById('modalDesc');
+    const modalTags = document.getElementById('modalTags');
+    const modalGallery = document.getElementById('modalGallery');
+    const modalScore = document.getElementById('modalScore');
+    const modalCount = document.getElementById('modalCount');
+
+    const items = document.querySelectorAll('.project-item');
+
+    items.forEach(item => {
+        item.addEventListener('click', function() {
+            const title = this.dataset.title || 'Проект';
+            let desc = this.dataset.desc || 'Описание проекта';
+            
+            // Получаем массив картинок
+            let images = [];
+            try {
+                images = JSON.parse(this.dataset.images || '[]');
+            } catch {
+                images = [];
+            }
+            // Если нет массива, используем одну картинку из превью
+            if (images.length === 0) {
+                const imgSrc = this.querySelector('.thumb img')?.src || '';
+                if (imgSrc) images = [imgSrc];
+            }
+            
+            // Получаем теги
+            let tags = [];
+            try {
+                tags = JSON.parse(this.dataset.tags || '[]');
+            } catch {
+                tags = [];
+            }
+            if (tags.length === 0) {
+                const tagElements = this.querySelectorAll('.tag');
+                tagElements.forEach(tag => {
+                    tags.push(tag.textContent);
+                });
+            }
+            
+            // Форматируем описание
+            let formattedDesc = desc
+                .replace(/\\n/g, '<br>')
+                .replace(/\n/g, '<br>')
+                .replace(/&#10;/g, '<br>');
+            
+            const projectId = this.dataset.project || 'project1';
+            
+            // Заполняем текст
+            modalTitle.textContent = title;
+            modalDesc.innerHTML = formattedDesc;
+            
+            // Теги
+            let tagsHtml = '';
+            tags.forEach(tag => {
+                tagsHtml += `<span>${tag}</span>`;
+            });
+            modalTags.innerHTML = tagsHtml || '<span>#проект</span>';
+            
+            // Загружаем рейтинг
+            const ratings = JSON.parse(localStorage.getItem('projectRatings') || '{}');
+            const data = ratings[projectId];
+            if (data) {
+                const avg = data.total / data.count;
+                modalScore.textContent = avg.toFixed(1);
+                modalCount.textContent = data.count;
+            } else {
+                modalScore.textContent = '0';
+                modalCount.textContent = '0';
+            }
+            
+            // ===== ГАЛЕРЕЯ: показываем все картинки =====
+            modalGallery.innerHTML = '';
+            images.forEach(src => {
+                const item = document.createElement('div');
+                item.className = 'gallery-item';
+                item.innerHTML = `<img src="${src}" alt="${title}" />`;
+                modalGallery.appendChild(item);
+            });
+            
+            // Если картинок нет — показываем заглушку
+            if (images.length === 0) {
+                modalGallery.innerHTML = `
+                    <div class="gallery-item" style="padding: 30px; color: #666; text-align: center;">
+                        📷 Нет изображений
+                    </div>
+                `;
+            }
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+    });
+})();
+    
+</script>
+<script>
+    // ===== СВЕТЯЩИЕСЯ ЗАГОЛОВКИ ПРИ СКРОЛЛЕ =====
+    (function() {
+        const titles = document.querySelectorAll('.section-title');
+        
+        // Функция проверки видимости
+        function checkVisibility() {
+            const windowHeight = window.innerHeight;
+            
+            titles.forEach(title => {
+                const rect = title.getBoundingClientRect();
+                // Заголовок виден, когда его верхняя часть на 100px выше нижней границы экрана
+                const isVisible = rect.top < windowHeight - 100 && rect.bottom > 100;
+                
+                if (isVisible) {
+                    title.classList.add('visible');
+                } else {
+                    title.classList.remove('visible');
+                }
+            });
+        }
+        
+        // Проверяем при скролле
+        window.addEventListener('scroll', checkVisibility);
+        
+        // Проверяем при загрузке
+        window.addEventListener('load', checkVisibility);
+        
+        // Проверяем при изменении размера окна
+        window.addEventListener('resize', checkVisibility);
+        
+        // Запускаем сразу
+        checkVisibility();
+    })();
+</script>
+<script>
+    // ===== ПОЯВЛЕНИЕ КАРТОЧЕК "О СЕБЕ" =====
+    (function() {
+        const cards = document.querySelectorAll('.about-card');
+        
+        function checkCardsVisibility() {
+            const windowHeight = window.innerHeight;
+            
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const isVisible = rect.top < windowHeight - 50 && rect.bottom > 50;
+                
+                if (isVisible) {
+                    card.classList.add('visible');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', checkCardsVisibility);
+        window.addEventListener('load', checkCardsVisibility);
+        window.addEventListener('resize', checkCardsVisibility);
+        
+        checkCardsVisibility();
+    })();
+</script>
+<script>
+    // ===== ПРИНУДИТЕЛЬНО НАВЕРХ ПРИ ЗАГРУЗКЕ =====
+    window.addEventListener('load', function() {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'instant'
+        });
+    });
+    
+    // ===== И ЕЩЁ РАЗ ЧЕРЕЗ 0.5 СЕКУНДЫ (НА ВСЯКИЙ СЛУЧАЙ) =====
+    setTimeout(function() {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'instant'
+        });
+    }, 500);
+</script>
+<script>
+    // ===== КОНТАКТЫ: ПОЯВЛЕНИЕ И EMAIL =====
+    (function() {
+        // Появление контактов при скролле
+        const contactItems = document.querySelectorAll('.contact-item');
+        
+        function checkContactVisibility() {
+            const windowHeight = window.innerHeight;
+            contactItems.forEach(item => {
+                const rect = item.getBoundingClientRect();
+                const isVisible = rect.top < windowHeight - 50 && rect.bottom > 50;
+                if (isVisible) {
+                    item.classList.add('visible');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', checkContactVisibility);
+        window.addEventListener('load', checkContactVisibility);
+        window.addEventListener('resize', checkContactVisibility);
+        checkContactVisibility();
+
+        // ===== EMAIL ПОПАП =====
+        const emailBtn = document.getElementById('emailBtn');
+        const emailPopup = document.getElementById('emailPopup');
+        const closeEmailPopup = document.getElementById('closeEmailPopup');
+        const copyBtn = document.getElementById('copyEmailBtn');
+        const emailText = document.getElementById('emailAddress');
+
+        if (emailBtn) {
+            emailBtn.addEventListener('click', function() {
+                emailPopup.classList.add('show');
+            });
+        }
+
+        if (closeEmailPopup) {
+            closeEmailPopup.addEventListener('click', function() {
+                emailPopup.classList.remove('show');
+            });
+        }
+
+        // Закрытие по клику вне окна
+        if (emailPopup) {
+            emailPopup.addEventListener('click', function(e) {
+                if (e.target === emailPopup) {
+                    emailPopup.classList.remove('show');
+                }
+            });
+        }
+
+        // Копирование email
+        if (copyBtn) {
+            copyBtn.addEventListener('click', function() {
+                const email = emailText.textContent;
+                navigator.clipboard.writeText(email).then(() => {
+                    const originalText = this.textContent;
+                    this.textContent = '✅ Скопировано!';
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                    }, 2000);
+                }).catch(() => {
+                    // Fallback для старых браузеров
+                    const input = document.createElement('input');
+                    input.value = email;
+                    document.body.appendChild(input);
+                    input.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(input);
+                    const originalText = this.textContent;
+                    this.textContent = '✅ Скопировано!';
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                    }, 2000);
+                });
+            });
+        }
+
+        // Закрытие по Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && emailPopup) {
+                emailPopup.classList.remove('show');
+            }
+        });
+    })();
+</script>
+<script>
+    // ===== ЗВЁЗДНЫЙ РЕЙТИНГ ДЛЯ ПРОЕКТОВ =====
+    (function() {
+        // Загружаем сохранённые оценки из localStorage
+        function loadRatings() {
+            const saved = localStorage.getItem('projectRatings');
+            if (saved) {
+                try {
+                    return JSON.parse(saved);
+                } catch {
+                    return {};
+                }
+            }
+            return {};
+        }
+
+        // Сохраняем оценки в localStorage
+        function saveRatings(ratings) {
+            localStorage.setItem('projectRatings', JSON.stringify(ratings));
+        }
+
+        let allRatings = loadRatings();
+
+        // Обновляем отображение рейтинга
+        function updateRatingDisplay(projectId) {
+            const data = allRatings[projectId];
+            if (!data) return;
+
+            const scoreEl = document.getElementById(`score-${projectId}`);
+            const countEl = document.getElementById(`count-${projectId}`);
+            
+            if (scoreEl) {
+                const avg = data.total / data.count;
+                scoreEl.textContent = avg.toFixed(1);
+            }
+            if (countEl) {
+                countEl.textContent = data.count;
+            }
+
+            // Обновляем звёзды
+            const container = document.querySelector(`.project-rating[data-project="${projectId}"]`);
+            if (container) {
+                const stars = container.querySelectorAll('.star');
+                const avg = data.total / data.count;
+                const rounded = Math.round(avg);
+                stars.forEach((star, index) => {
+                    if (index < rounded) {
+                        star.classList.add('active');
+                    } else {
+                        star.classList.remove('active');
+                    }
+                });
+            }
+        }
+
+        // Инициализация всех проектов
+        function initAllRatings() {
+            const projects = document.querySelectorAll('.project-rating');
+            projects.forEach(container => {
+                const projectId = container.dataset.project;
+                if (!allRatings[projectId]) {
+                    allRatings[projectId] = { total: 0, count: 0 };
+                }
+                updateRatingDisplay(projectId);
+            });
+            saveRatings(allRatings);
+        }
+
+        // Обработчик клика по звезде
+        document.addEventListener('click', function(e) {
+            const star = e.target.closest('.star');
+            if (!star) return;
+
+            const container = star.closest('.project-rating');
+            if (!container) return;
+
+            const projectId = container.dataset.project;
+            const value = parseInt(star.dataset.value);
+            
+            if (!allRatings[projectId]) {
+                allRatings[projectId] = { total: 0, count: 0 };
+            }
+
+            // Добавляем оценку
+            allRatings[projectId].total += value;
+            allRatings[projectId].count += 1;
+
+            // Сохраняем
+            saveRatings(allRatings);
+
+            // Обновляем отображение
+            updateRatingDisplay(projectId);
+
+            // Показываем сообщение "Спасибо!"
+            const msg = document.getElementById(`msg-${projectId}`);
+            if (msg) {
+                msg.classList.add('show');
+                setTimeout(() => {
+                    msg.classList.remove('show');
+                }, 2000);
+            }
+
+            // Блокируем звёзды на 0.5 секунды (чтобы не спамили)
+            const stars = container.querySelectorAll('.star');
+            stars.forEach(s => {
+                s.style.pointerEvents = 'none';
+                s.style.opacity = '0.5';
+            });
+            setTimeout(() => {
+                stars.forEach(s => {
+                    s.style.pointerEvents = 'auto';
+                    s.style.opacity = '1';
+                });
+            }, 500);
+        });
+
+        // Запускаем
+        initAllRatings();
+    })();
+</script>
+</body>
+</html>
