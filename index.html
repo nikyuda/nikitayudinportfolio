@@ -2751,7 +2751,7 @@ P.S. Проект является вымышленным и не несет к�
             const container = document.querySelector(`.project-rating[data-project="${projectId}"]`);
             if (container) {
                 const stars = container.querySelectorAll('.star');
-                const avg = data.total / data.count;
+                const avg = data.total / data.count || 0;
                 const rounded = Math.round(avg);
                 stars.forEach((star, index) => {
                     if (index < rounded) {
